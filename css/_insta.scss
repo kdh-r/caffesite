@@ -1,0 +1,97 @@
+#insta{
+  margin-bottom: 200px;
+}
+.insta-box{
+  display: flex;
+  
+  &__title{
+    color: #4E4E4E;
+    padding-left: 3rem;
+    margin-bottom: 1rem;
+
+    & > h1{
+      font-size: 16px;
+    }
+    & > h2{
+      font-size: 12px;
+    }
+  }
+  &__btn{
+     padding-left: 2rem;
+    & > a {
+      font-weight: 900;
+      color: #FF8C00;
+      background: -webkit-linear-gradient(0deg,#6A89F0,#EA4BAD, #F4F483);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__img{
+    display: flex;
+   
+    padding-left: 3rem;
+  }
+  &__item{
+    overflow: hidden;
+    padding:0  0.5rem;
+    flex-basis: 25%;
+  }
+}
+
+@media screen and(max-width: 1000px){
+  #insta{
+    margin-bottom: 200px;
+  }
+  .insta-box{    
+    &__title{
+      color: #4E4E4E;
+      padding: 0rem;
+      margin-bottom: 1rem;
+    }   
+    &__img{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      margin-bottom: 200px;
+    }
+    &__item{
+      padding: 0.5rem;
+      flex-basis: 50%;
+      
+    }
+  }
+}
+
+@media screen and(max-width: 600px){
+  #insta{
+    margin-bottom: 100px;
+  }
+  .insta-box{    
+    &__title{
+      color: #4E4E4E;
+      padding: 0rem;
+      margin-bottom: 1rem;
+    }   
+    &__img{
+      display: flex;
+      padding: 0;
+      margin: 0;
+    }
+    &__item{
+      flex-basis: 100%;
+    }
+    &__title{
+      color: #4E4E4E;
+      // padding: 0rem;
+      margin-bottom: 1rem;
+  
+      & > h1{
+        font-size: 20px;
+      }
+      & > h2{
+        font-size: 15px;
+      }
+    }
+  }
+}

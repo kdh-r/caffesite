@@ -1,0 +1,35 @@
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Julius Sans One', sans-serif;
+}
+ul{
+  list-style: none;
+  padding: 0;
+  & > li{
+    & > a{
+      color: #4E4E4E;
+      text-decoration: none;
+    }
+  }
+}
+a{
+  text-decoration: none;
+}
+p{
+  margin-bottom: 0;
+}
+
+// --- ヘッダー ----
+@import "header.scss";
+
+// ----イベントセクション-----
+@import "event.scss";
+
+// ーーーーインスタセクションーーーーー
+@import "insta.scss";
+
+// ーーーアバウトセクションーーー
+@import "about.scss";
+
+// ---coffeeセクション---
+@import "coffee.scss";
